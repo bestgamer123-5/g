@@ -1,0 +1,100 @@
+
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background: none;
+                margin: 0;
+                padding: 0;
+            }
+            .btn {
+                font-family: sans-serif;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 2.8px;
+                background-color: #1b8bf9;
+                padding: 15px 50px;
+                border-radius: 5rem;
+                box-shadow: 1px 2.9px 16px rgba(27,139,249,0.4);
+                transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
+            }
+            .btn:hover {
+                box-shadow: 3px 4.9px 16px rgba(27,139,249,0.6);
+                letter-spacing: 5px;
+            }
+            .btn--clicked {
+                transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
+                padding: 15px 2px;
+                width: 50px;
+                color: transparent;
+                z-index: -10;
+            }
+            .color {
+                display: block;
+                width: 0;
+                height: 0;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                position: absolute;
+                transition: 0.8s ease;
+                border-radius: 50%;
+                background-color: transparent;
+            }
+            .expanded {
+                width: 200%;
+                padding-bottom: 200%;
+                height: auto;
+            }
+            .color--blue {
+                background-color: #1b8bf9;
+                transition-delay: 0.25s;
+            }
+            .color--orange {
+                background-color: #FF6C19;
+                transition-delay: 0.5s;
+            }
+            .color--green {
+                background-color: #41FF9F;
+                transition-delay: 0.75s;
+            }
+            .color--white {
+                background-color: #f9f9f9;
+                transition-delay: 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="width: 100%;">
+            <h1 style="text-align: center; margin-top: 30px; margin-bottom: 10px;">apply</h1>
+            <nav style="text-align: center; background-color: lightblue; padding: 10px; border-radius: 5px; margin-bottom: 20px; margin-right: 40px; border-radius: 10px;">
+                <ul style="list-style: none; margin: 0 auto; padding: 0; display: flex; justify-content: center; align-items: center; width: fit-content;">
+                    <li style="margin: 0 15px;">
+                        <a class="btn" href="file:///C:/Users/masym/Desktop/connectpros/ConnectPros.html" title="Home" style="padding: 10px 30px; font-size: 20px; border-radius: 10px; background-color: rgb(146, 113, 244); color: white; text-decoration: none;">Home</a>
+                    </li>
+                    <li style="margin: 0 15px;">
+                        <a class="btn" href="file:///C:/Users/masym/Desktop/connectpros/about.html" title="About" style="padding: 10px 30px; font-size: 20px; border-radius: 10px; background-color: rgb(146, 113, 244); color: white; text-decoration: none;">About</a>
+                    </li>
+                    <li style="margin: 0 15px;">
+                        <a class="btn" href="file:///C:/Users/masym/Desktop/connectpros/services.html" title="Services" style="padding: 10px 30px; font-size: 20px; border-radius: 10px; background-color: rgb(146, 113, 244); color: white; text-decoration: none;">Services</a>
+                    </li>
+                   
+                </ul>
+        </header>
+        <main>
+        <span class="color color--blue" data-value="1"></span>
+        <span class="color color--orange" data-value="1"></span>
+        <span class="color color--green" data-value="1"></span>
+        <span class="color color--white" data-value="1"></span>
+        <p style="text-align: center; margin-top: 20px; font-size: 18px;">Apply for our services by entering your document below (by link or file).</p>
+        <form action="#" method="post" style="text-align: center; margin-top: 20px;">
+            <input type="text" name="documentLink" placeholder="Enter document link or upload file" style="width: 300px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <button type="submit" class="btn" style="margin-left: 10px;">Submit</button>
+        </form>
+        <p style="text-align: center; margin-top: 20px; font-size: 18px;">For more information, contact us at contact@supprot.com<a href="mailto:
+</hmtl>
